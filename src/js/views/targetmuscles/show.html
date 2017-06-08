@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Videos for {{ vm.targetMuscle.name }}</h1>
+  <div ng-repeat="video in vm.targetMuscle.videos track by $index">
+    <h3>{{ video.title }}</h3>
+    <p>{{ video.description }}</p>
+    <iframe width="560" height="315" ng-src="{{ video.url | trusted }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>

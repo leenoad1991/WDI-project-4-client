@@ -44,20 +44,26 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   })
   .state('muscleGroupsIndex', {
     url: '/musclegroups',
-    templateUrl: 'js/views//musclegroups/index.html',
+    templateUrl: 'js/views/musclegroups/index.html',
     controller: 'MuscleGroupsIndexCtrl',
     controllerAs: 'vm'
   })
   .state('muscleGroupsShow', {
     url: '/musclegroups/:id',
-    templateUrl: 'js/views/musclegroups.html',
+    templateUrl: 'js/views/musclegroups/show.html',
     controller: 'MuscleGroupsShowCtrl',
     controllerAs: 'vm'
   })
-  .state('targetMuscleIndex', {
+  .state('targetMusclesIndex', {
     url: '/targetmuscles',
     templateUrl: 'js/views/targetmuscles/index.html',
     controller: 'TargetMuscleIndexCtrl',
+    controllerAs: 'vm'
+  })
+  .state('targetMusclesShow', {
+    url: '/targetmuscles/:id',
+    templateUrl: 'js/views/targetmuscles/show.html',
+    controller: 'TargetMuscleShowCtrl',
     controllerAs: 'vm'
   });
 
