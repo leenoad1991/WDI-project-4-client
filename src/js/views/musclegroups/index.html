@@ -1,0 +1,15 @@
+<div class="container text-center">
+  <h1>Muscle Groups</h1>
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="muscleGroup in vm.muscleGroups track by $index">
+      <div class="thumbnail">
+        <img ng-src="{{ muscleGroup.image}}" alt="{{ muscleGroup.name }}">
+        <div class="caption">
+          <h3>{{ muscleGroup.name }}</h3>
+          <p>{{ muscleGroup.description }}</p>
+          <p><a ui-sref="targetMuscleIndex" class="btn btn-default" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

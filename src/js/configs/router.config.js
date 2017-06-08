@@ -1,3 +1,4 @@
+
 angular
 .module('gymApp')
 .config(Router);
@@ -15,13 +16,49 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/register',
     templateUrl: '/js/views/register.html',
     controller: 'RegisterCtrl',
-    controllerAs: 'register'
+    controllerAs: 'vm'
   })
   .state('login', {
     url: '/login',
-    templateUrl: '/js/views/login.html',
+    templateUrl: '/js/views/user/login.html',
     controller: 'LoginCtrl',
-    controllerAs: 'login'
+    controllerAs: 'vm'
+  })
+  .state('show', {
+    url: '/show',
+    templateUrl: 'js/views/show.html',
+    controller: 'ShowCtrl',
+    controllerAs: 'vm'
+  })
+  .state('edit', {
+    url: '/edit',
+    templateUrl: 'js/views/user/edit.html',
+    controller: 'EditCtrl',
+    controllerAs: 'vm'
+  })
+  .state('index', {
+    url: '/index',
+    templateUrl: 'js/views/index.html',
+    controller: 'IndexCtrl',
+    controllerAs: 'vm'
+  })
+  .state('muscleGroupsIndex', {
+    url: '/musclegroups',
+    templateUrl: 'js/views//musclegroups/index.html',
+    controller: 'MuscleGroupsIndexCtrl',
+    controllerAs: 'vm'
+  })
+  .state('muscleGroupsShow', {
+    url: '/musclegroups/:id',
+    templateUrl: 'js/views/musclegroups.html',
+    controller: 'MuscleGroupsShowCtrl',
+    controllerAs: 'vm'
+  })
+  .state('targetMuscleIndex', {
+    url: '/targetmuscles',
+    templateUrl: 'js/views/targetmuscles/index.html',
+    controller: 'TargetMuscleIndexCtrl',
+    controllerAs: 'vm'
   });
 
   $urlRouterProvider.otherwise('/');

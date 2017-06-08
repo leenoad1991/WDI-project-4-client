@@ -7,7 +7,6 @@ function RegisterCtrl(userFactory, CurrentUserService, $state){
   const vm = this;
 
   vm.register = () => {
-    console.log('clicked');
     userFactory
     .register(vm.user)
     .$promise
