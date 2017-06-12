@@ -1,1 +1,110 @@
-// Import all of your scss files here
+body {
+  color: #1e74ff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  color: #1e74ff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #1e74ff;
+}
+
+.ng-binding {
+  color: #1e74ff
+}
+
+.navbar-default {
+  border-color: #1e74ff;
+}
+
+
+.full-front-chest {
+  position: absolute;
+  width: 71px;
+  background-color: pink;
+  color: white;
+  top: 74px;
+  left: 46%;
+  padding-left: 50px;
+  padding-top: 51px;
+  font-size: 10px;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: 15px
+}
+
+.full-front-abs {
+  position: absolute;
+  width: 71px;
+  background-color: green;
+  color: white;
+  top: 42px;
+  left: 46%;
+  padding-left: 50px;
+  padding-top: 38px;
+  font-size: 10px;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: 15px
+}
+
+.full-front-legs {
+  position: absolute;
+  width: 71px;
+  background-color: blue;
+  color: white;
+  top: 126px;
+  left: 46%;
+  padding-left: 50px;
+  padding-top: 113px;
+  font-size: 10px;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: 15px
+}
+
+.full-back-back {
+position: absolute;
+width: 93px;
+background-color: black;
+color: white;
+top: 54px;
+left: 45%;
+padding-left: 50px;
+padding-top: 65px;
+font-size: 10px;
+z-index: 5;
+opacity: 0.5;
+border-radius: 15px
+}
+
+.full-back-legs {
+position: absolute;
+width: 83px;
+background-color: blue;
+color: white;
+top: 137px;
+left: 46%;
+padding-left: 50px;
+padding-top: 115px;
+font-size: 20px;
+z-index: 5;
+opacity: 0.5;
+}
+
+.full-back-delts {
+  position: absolute;
+  width: 38px;
+  background-color: yellow;
+  color: white;
+  top: 40px;
+  left: 51.5%;
+  padding-left: 36px;
+  padding-top: 35px;
+  font-size: 10px;
+  z-index: 5;
+  opacity: 0.5;
+  border-radius: 15px
+}
