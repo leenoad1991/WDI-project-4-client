@@ -1,32 +1,39 @@
 body {
   color: #1e74ff;
   font-family: 'Exo 2', sans-serif;
+  background-color: #edf1ff;
+}
+
+.navbar-default > .container-fluid {
+  background-color: #1e74ff;
+  border-color: white;
+  .navbar-brand, a {
+    color: white;
+  }
+  a {
+    color: white !important;
+  }
 }
 
 
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  color: #1e74ff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #1e74ff;
-}
-
-.ng-binding {
-  color: #1e74ff
-}
-
-.navbar-default {
+#comments {
+  border: solid;
   border-color: #1e74ff;
+  list-style-type: none;
+}
+
+.thumbnail {
+  min-height: 70px;
 }
 
 
 .full-front-chest {
   position: absolute;
-  width: 71px;
-  background-color: pink;
+  width: 110px;
+  background-color: red;
   color: white;
-  top: 74px;
-  left: 46%;
+  top: 81px;
+  left: 33%;
   padding-left: 50px;
   padding-top: 51px;
   font-size: 10px;
@@ -35,13 +42,16 @@ body {
   border-radius: 15px
 }
 
+
+
 .full-front-abs {
   position: absolute;
-  width: 71px;
-  background-color: green;
+  width: 87px;
+  height: 66px;
+  background-color: none;
   color: white;
-  top: 42px;
-  left: 46%;
+  top: 150px;
+  left: 36%;
   padding-left: 50px;
   padding-top: 38px;
   font-size: 10px;
@@ -50,61 +60,88 @@ body {
   border-radius: 15px
 }
 
+
+
 .full-front-legs {
   position: absolute;
-  width: 71px;
-  background-color: blue;
+  width: 120px;
+  background: transparent;
   color: white;
-  top: 126px;
-  left: 46%;
+  top: 230px;
+  left: 31%;
   padding-left: 50px;
-  padding-top: 113px;
+  padding-top: 230px;
   font-size: 10px;
   z-index: 5;
   opacity: 0.5;
-  border-radius: 15px
+  border-radius: 15px;
 }
+
+
 
 .full-back-back {
 position: absolute;
-width: 93px;
-background-color: black;
+width: 108px;
+background-color: none;
 color: white;
-top: 54px;
-left: 45%;
+top: 80px;
+left: 32%;
 padding-left: 50px;
-padding-top: 65px;
+padding-top: 110px;
 font-size: 10px;
 z-index: 5;
 opacity: 0.5;
-border-radius: 15px
+border-radius: 20px
 }
+
+
 
 .full-back-legs {
 position: absolute;
-width: 83px;
-background-color: blue;
+width: 95px;
+background-color: none;
 color: white;
-top: 137px;
-left: 46%;
-padding-left: 50px;
-padding-top: 115px;
+top: 205px;
+left: 41%;
+padding-left: 40px;
+padding-top: 240px;
 font-size: 20px;
 z-index: 5;
 opacity: 0.5;
 }
 
+
+
 .full-back-delts {
   position: absolute;
   width: 38px;
-  background-color: yellow;
+  background-color: none;
   color: white;
-  top: 40px;
-  left: 51.5%;
-  padding-left: 36px;
+  top: 74px;
+  left: 59.5%;
+  padding-left: 46px;
   padding-top: 35px;
   font-size: 10px;
   z-index: 5;
   opacity: 0.5;
   border-radius: 15px
+}
+
+
+.body-index {
+  display: inline-block;
+  position: relative;
+
+  img {
+    width:400px;
+
+    &.back {
+      width: 350px;
+    }
+  }
+}
+
+.thumbnail img {
+    height:250px;
+    width:100%;
 }

@@ -9,7 +9,7 @@
 
     <form ng-submit="vm.createComment(video.id)">
       <label for="body"></label>
-      <textarea name="body" rows="8" cols="80" ng-model="vm.comment.body"></textarea>
+      <textarea name="body" rows="12" cols="80" ng-model="vm.comment.body"></textarea>
       <br>
       <input type="submit" name="" value="Add Comment">
     </form>
@@ -17,10 +17,12 @@
 </div>
 
 
-<ul class="comments">
-  <li ng-repeat="video in vm.targetMuscle.videos track by $index">
-    <ul>
-            <li ng-repeat="comment in video.comments track by $index">{{comment.body }}</li>
-    </ul>
-  </li>
-</ul>
+  <ul class="comments">
+    <li ng-repeat="video in vm.targetMuscle.videos track by $index">
+      <ul>
+        <div class="container" id="comments">
+          <li ng-repeat="comment in video.comments track by $index">{{comment.body }}</li>
+        </div>
+      </ul>
+    </li>
+  </ul>

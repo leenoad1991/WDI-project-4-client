@@ -1,31 +1,32 @@
 <div class="container text-center">
   <h1>Muscle Groups</h1>
+  <p>Please click the muscle group you'd like to find exercises for!</p>
 
-  <div style="position:relative;">
-    <img src = "./images/Full body.png" style="min-width:220px;max-width:220px;">
-    <div class="full-front-chest"></div>
-    <div class="full-front-abs"></div>
-    <div class="full-front-legs"></div>
+  <div class="body-index">
+    <img src="./images/Full body.png">
+    <div ui-sref="muscleGroupsShow({id: 3})" class="full-front-chest"></div>
+    <div ui-sref="muscleGroupsShow({id: 5})" class="full-front-abs"></div>
+    <div ui-sref="muscleGroupsShow({id: 1})" class="full-front-legs"></div>
   </div>
-
-  <div style="position:relative;">
-    <img src = "./images/Full-back.png" style="min-width:220px;max-width:220px;">
-    <div class="full-back-back"></div>
-    <div class="full-back-legs"></div>
-    <div class="full-back-delts"></div>
+  <div class="body-index">
+    <img class="back" src="./images/Full-back.png">
+    <div ui-sref="muscleGroupsShow({id: 2})" class="full-back-back"></div>
+    <div ui-sref="muscleGroupsShow({id: 1})" class="full-back-legs"></div>
+    <div ui-sref="muscleGroupsShow({id: 4})" class="full-back-delts"></div>
   </div>
-
 </div>
-<div class="row">
-  <div class="col-sm-6 col-md-4" ng-repeat="muscleGroup in vm.muscleGroups track by $index">
-    <div class="thumbnail">
-      <img ng-src="{{ muscleGroup.image}}" alt="{{ muscleGroup.name }}">
-      <div class="caption">
-        <h3>{{ muscleGroup.name }}</h3>
-        <p>{{ muscleGroup.description }}</p>
-        <p><a ui-sref="muscleGroupsShow({ id: muscleGroup.id })" class="btn btn-default" role="button">View</a></p>
-      </div>
-    </div>
-  </div>
 
+
+
+<!-- <div class="row">
+<div class="col-sm-6 col-md-4" ng-repeat="muscleGroup in vm.muscleGroups track by $index">
+<div class="thumbnail">
+<img ng-src="{{ muscleGroup.image}}" alt="{{ muscleGroup.name }}">
+<div class="caption">
+<h3>{{ muscleGroup.name }}</h3>
+<p>{{ muscleGroup.description }}</p>
+<p><a ui-sref="muscleGroupsShow({ id: muscleGroup.id })" class="btn btn-default" role="button">View</a></p>
 </div>
+</div>
+</div>
+</div> -->
